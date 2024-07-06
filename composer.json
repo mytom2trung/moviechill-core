@@ -1,0 +1,37 @@
+{
+    "name": "ggg3/moviechill-core",
+    "description": "Crawler Nguo Online",
+    "type": "library",
+    "authors": [
+        {
+            "name": "GGG3",
+            "email": "admin@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^6|^7|^8",
+        "ckfinder/ckfinder-laravel-package": "v3.5.2.1",
+        "ggg3/laravel-caching-model": "v1.0.0",
+        "ggg3/crud": "v1.0.0",
+        "ggg3/settings": "v1.0.0",
+        "ggg3/permissionmanager": "v1.0.0",
+        "spatie/laravel-sitemap": "^5.8",
+        "artesaos/seotools": "^v0.22.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MovieChill\\Core\\": "src/",
+            "MovieChill\\Core\\Database\\Factories\\": "database/factories/",
+            "MovieChill\\Core\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MovieChill\\Core\\MovieChillServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
